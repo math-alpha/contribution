@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Input form</title>
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/script.js" charset="utf-8"></script>-->
+
+    <style media="screen">
+      hr {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: red;
+        border-width: thick;
+        border-color: #595959;
+      }
+      .w3-mono, .w3-footer{
+        font-family: sans-serif;
+        font-style: normal;
+        font-variant: small-caps;
+        font-kerning: auto;
+        flex: initial;
+      }
+    </style>
+
+  </head>
+
+  <body  onload="document.getElementById('id01').style.display='block'">
+
+    <div class="w3-card-4" style="margin: 70px">
+      <header class="w3-container w3-grey " style="padding : 20px;position:relative">
+          <a href="#"><i class="fa fa-bars w3-xxlarge"></i></a>
+          <span class="w3-center w3-xxlarge" style="position: absolute; left: 80px;"> FORM</span>
+          <a href="#"><i class="fa fa-search w3-xxlarge" style="position : absolute; right:15px;"></i></a>
+      </header>
+
+      <div class="w3-container w3-mono" style="padding : 10px">
+        <h2 style="text-align : center "><u>Source Language</u> [ <span id="sll">A</span> ] </h2>
+        <div class="w3-row">
+           <div class="w3-col" style="width:50%">
+             <div style="padding-left : 10px; padding-right: 50px">
+               <input class="w3-input w3-animate-input" type="text" style="width :200px" maxlength="30">
+               <label class="w3-label">Word</label>
+             </div>
+             <div style="padding-left : 10px; padding-right: 50px; padding-top: 10px">
+               <input value="Amsterdam,Washington,Sydney,Beijing,Cairo" type="text" style="width :200px" maxlength="300" data-role="tagsinput">
+               <label class="w3-label">Tag</label>
+            </div>
+           </div>
+           <div class="w3-col w3-leftbar w3-border-brown" style="width:50%">
+             <h4 style="margin-left:15px"><u>Description</u></h4>
+             <textarea style="margin:15px" name="description1" rows="5" cols="30" placeholder="Enter any additional information here including links."></textarea>
+           </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="w3-container w3-mono" style="padding : 10px">
+        <h2 style="text-align : center "><u>Target Language</u> [ <span id="tll">B</span> ]</h2>
+      <div class="w3-row">
+         <div class="w3-col" style="width:50%">
+           <div style="padding-left : 10px; padding-right: 50px">
+             <input class="w3-input w3-animate-input" type="text" style="width :200px" maxlength="30">
+             <label class="w3-label">Word</label>
+           </div>
+           <div style="padding-left : 10px; padding-right: 50px; padding-top: 10px">
+             <input class="w3-input w3-animate-input" type="text" style="width :200px" maxlength="300" data-role="tagsinput">
+             <label class="w3-label">Tag</label>
+           </div>
+         </div>
+         <div class="w3-col w3-leftbar w3-border-brown" style="width:50%">
+           <h4 style="margin-left:15px"><u>Description</u></h4>
+           <textarea style="margin:15px" name="description1" rows="5" cols="30" placeholder="Enter any additional information here including links."></textarea>
+         </div>
+      </div>
+      <div style="padding : 10px; margin: 50px; position:relative; ">
+        <button class="w3-btn" onclick="save()" style="position : absolute; right:20px;">Save</button>
+      </div>
+    </div>
+      <footer class="w3-container w3-grey w3-footer" style="width:100%">
+        <h6 style="text-align:center"> coded   with  &#9825;  and  passion </h6>
+        <h6 style="text-align:center">&copy 2018 Ngadou Sylvestre</h6>
+      </footer>
+  </body>
+
+  <div id="id01" class="w3-modal w3w3-mono">
+    <div class="w3-modal-content w3-animate-zoom w3-card-8">
+      <header class="w3-container" style="background-color:#595959">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">X</span>
+        <h2 class="w3-center">WELCOME!</h2>
+      </header>
+      <div class="w3-container" style="background-color:#e6e6e6; position:relative;">
+        <form class="w3-container" style="margin-bottom:10px; padding-bottom:39px; padding-top:10px">
+          <input class="w3-input" id="sL" type="text" style="background-color:#e6e6e6">
+          <label class="w3-label">Source Language</label>
+          <input class="w3-input" id="tL" type="text" style="background-color:#e6e6e6">
+          <label class="w3-label">Target Language</label>
+          <div style="margin-top : 10px; margin-bottom : 10px; padding-left:20px; position:absolute; right:5px;">
+            <button class="w3-btn w3-dark-grey w3-round-large" type="reset" name="reset">reset</button>
+            <button class="w3-btn w3-dark-grey w3-round-large" type="button" name="submit" onclick="changeLang(); document.getElementById('id01').style.display='none'">Submit</button>
+          </div>
+        </form>
+      </div>
+      <footer class="w3-container" style="background-color:#595959;">
+        <h6 class="w3-center"><> with &#9825;</h6>
+      </footer>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  function changeLang() {
+    var x = document.getElementById('sll').innerHTML = document.getElementById('sL').value;
+    var y = document.getElementById('tll').innerHTML = document.getElementById('tL').value;
+    console.log("Translating from "+document.getElementById('sll').innerHTML+" to "+document.getElementById('tll').innerHTML+"\n");
+    document.getElementById('id01').style.display='none';
+    console.log("File name : apertium."+x+"-"+y+"."+x+"."+y+"\n");
+  }
+  </script>
+
+</html>
