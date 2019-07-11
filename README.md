@@ -1,5 +1,12 @@
 # Contribution
 Form to help add words to a bidix (To be proposed to Apertium)
+It also adds words to the monodix
+
+##How to use 
+It works thanks to a minimalistic nodejs (Express js) server.
+<br/>Command : `$ nodemon server`
+then browse to http://localhost:3000<br/>
+Fill the form and check the files ~byv-fra.xml and ~byv.txt
 
 ## Todo List
 
@@ -14,5 +21,5 @@ Form to help add words to a bidix (To be proposed to Apertium)
 ### Mobile
     It needs to be compatible with mobile devices.
     
-  Proposed by [Ngadou Sylvestre](https://www.github.com/math-alpha)
+  Proposed by [Ngadou Yopa](https://www.github.com/math-alpha)
 
