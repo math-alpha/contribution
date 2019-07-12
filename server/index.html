@@ -10,16 +10,22 @@
                 medT=$("#medTag").val();
                 fra=$("#fraText").val();
                 fraT=$("#fraTag").val();
+                med = med.split(" ").join("_");
+                medT = medT.split(" ").join("&");
+                fra = fra.split(" ").join("_");
+                fraT = fraT.split(" ").join("&");
                 $.post("http://localhost:3000/add",{_med: med, _medt: medT, _fra: fra, _frat: fraT}, function(data){
                     if(data==='done') {
                         alert("sent successfully !");
                     }
                 });
+                $('#form-id').reset();
             });
         });
     </script>
 </head>
 <body>
+<form id="form-id">
 <h1>Mə̀dʉ̂mbɑ̀</h1>
 <input type="text" id="medText" size="40"><br><br>
 <input type="text" id="medTag" size="40"><br>
@@ -27,5 +33,6 @@
 <input type="TEXT" id="fraText" size="40"><br><br>
 <input type="text" id="fraTag" size="40"><br><br>
 <input type="button" id="submit" value="Submit">
+</form>
 </body>
 </html>
