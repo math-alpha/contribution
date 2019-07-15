@@ -14,8 +14,8 @@ app.post('/add',function(req,res){
     var medT = req.body._medt;
     var fra = req.body._fra;
     var fraT = req.body._frat;
-    var l = "\<e\>\<p\>\<l\>"+med+"<s n=\"n\"/></l>";
-    var r = "\<r\>"+fra+" \<s n=\"n\"/></r></p></e>";
+    var l = "\<e\>\<p\>\<l\>"+med+"<s n=\"n\"/>"+medT+"</l>";
+    var r = "\<r\>"+fra+" \<s n=\"n\"/>"+fraT+"</r></p></e>";
 
     var bidixText = l + r + "\n";
     var monodixText = med + ":"+med +" "+medT+ " # ; !\""+fra+"\"\n"
