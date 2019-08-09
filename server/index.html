@@ -2,6 +2,7 @@
 <head>
     <title>Simple login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="..\assets\css\bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
     <script>
         $(document).ready(function(){
@@ -17,10 +18,11 @@
                 fraT = fraT.split(" ").join("&");
                 $.post("http://localhost:3000/add",{_med: med, _medt: medT, _fra: fra, _frat: fraT}, function(data){
                     if(data==='done') {
-                        alert("sent successfully !");
+                        console.log("sent successfully !");
                     }
                 });
                 $('#form-id').reset();
+                $(".container").find("input[type=text], textarea").val("");
             });
         });
     </script>
@@ -33,7 +35,7 @@
             <input type="text" id="medTag" size="40"><br>
 
             <h1> French </h1>
-            <input type="TEXT" id="fraText" size="40"><br><br>
+            <input type="text" id="fraText" size="40"><br><br>
             <input type="text" id="fraTag" size="40"><br><br>
 
             <input type="button" id="submit" value="Submit">
