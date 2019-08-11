@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <title>Simple login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" src="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
     <script>
         $(document).ready(function(){
@@ -29,15 +29,57 @@
     <div class="container">
         <form id="form-id">
             <h1>Mə̀dʉ̂mbɑ̀</h1>
-            <input type="text" id="medText" size="40"><br><br>
-            <input type="text" id="medTag" size="40"><br>
+            <input type="text" id="medText" placeholder="Enter medumba text"><br><br>
+            <input type="text" id="medTag" placeholder="Enter medumba tags"><br>
 
             <h1> French </h1>
-            <input type="TEXT" id="fraText" size="40"><br><br>
-            <input type="text" id="fraTag" size="40"><br><br>
+            <input type="TEXT" id="fraText" placeholder="Enter french text"><br><br>
+            <input type="text" id="fraTag" placeholder="Enter french tags"><br><br>
 
             <input type="button" id="submit" value="Submit">
         </form>
     </div>
 </body>
+<style rel="stylesheet">
+
+    body{
+        background-color: #1b1e21;
+    }
+
+    .container {
+        border: 1px solid black;
+        width: 50%;
+        margin: auto;
+        align-items: center;
+        align-content: center;
+        color: #ffffd7;
+    }
+
+    #form-id {
+        margin: auto;
+    }
+
+    input {
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 30px;
+        width: 80%;
+        margin: 0 10px 0 10px;
+        height: 40px;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: larger;
+        color: #fff;
+    }
+
+    h1 {
+        alignment: center;
+    }
+
+    input#submit{
+        width: 50%;
+    }
+
+</style>
 </html>

@@ -1,0 +1,46 @@
+    3  wc corpora/corpus-byv.txt
+    8  cd workspace
+    9  cd web
+   10  git clone https://github.com/mschwarzmueller/laravel-basics-youtube.git
+   74  cd Downloads
+  146  cd Downloads
+  221  echo "mə̀bwɔ" | apertium -d . byv-morph
+  222  echo "mbwɔ" | apertium -d . byv-morph
+  293  git commit -m "added more words"
+  299  echo "bwɔ̌ntʉ" | apertium -d . byv-morph
+  311  git commit -m "added more words to the dict"
+  324  echo "buʼŋwàʼnì" | apertium -d . byv-fra
+  326  echo "bwɔ̌ntʉ" | apertium -d . byv-fra
+  335  echo "bwǒŋ" | apertium -d . byv-fra
+  336  echo "bwŋ" | apertium -d . byv-fra
+  337  echo "bwoŋ" | apertium -d . byv-fra
+  338  echo "mbwoŋ" | apertium -d . byv-fra
+  348  echo "wa" | apertium -d . byv-fra
+  352  echo "mbwɔ̀" | apertium -d . byv-fra
+  353  echo "nswə" | apertium -d . byv-fra
+  360  echo "mbwə̀" | apertium -d . byv-fra
+  370  echo "bwǒg" | apertium -d . byv-fra
+  384  cd workspace
+  385  cd web
+  400  cd workspace
+  401  cd mediawiki
+  402  ls *wiki
+  403  ls wiki*
+  406  git clone https://gerrit.wikimedia.org/r/mediawiki/core.git
+  407  sudo mv mediawiki /var/www/html
+  429  cd workspace
+  435  ./configure --extension --web-engine
+  437  libqt5webengine5-dev
+  442  ./configure --extension --web-engine
+  448  ./configure --extension --web-engine
+  449  iwconfig
+  453  iwconfig
+  501  cd ~/workspace/learn/quicksite
+  505  cd workspace
+  506  cd web
+  514  hugo help new
+  515  cd workspace
+  519  hugo new site
+  520  hugo new site quicksite
+  538  history | grep "wc*"
+  539  history | grep "wc*" > history.txt
