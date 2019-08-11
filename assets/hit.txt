@@ -6,16 +6,16 @@
      ^10/10<num>$ ^sə̂/*sə̂$
      ^10/10<num>$ ^lǎ/*lǎ$
       ^9/9<num>$ ^ncò/*ncò$
-      ^9/9<num>$ ^mbɔ̀/*mbɔ̀$
-      ^9/9<num>$ ^làʼ/*làʼ$
+      ^9/9<num>$ ^mbɔ̀/*mbɔ̀$ ????
+      ^9/9<num>$ ^làʼ/*làʼ$ ????
       ^9/9<num>$ ^cɛ̀n/*cɛ̀n$
       ^9/9<num>$ ^Bîn/*Bîn$
       ^8/8<num>$ ^tsə̀moʼo/*tsə̀moʼo$
       ^8/8<num>$ ^tɛ̀d/*tɛ̀d$
-      ^8/8<num>$ ^ntɑm/*ntɑm$
+      ^8/8<num>$ ^ntɑm/*ntɑm$ ?????
       ^8/8<num>$ ^njîm/*njîm$
       ^8/8<num>$ ^ngə̀lâŋ/*ngə̀lâŋ$
-      ^8/8<num>$ ^ndɔtə/*ndɔtə$
+      ^8/8<num>$ ^ndɔtə/*ndɔtə$    
       ^8/8<num>$ ^ncôb/*ncôb$
       ^8/8<num>$ ^ncàŋ/*ncàŋ$
       ^8/8<num>$ ^mî/*mî$
@@ -34,6 +34,9 @@
       ^7/7<num>$ ^nâʼ/*nâʼ$
       ^7/7<num>$ ^mɛ̌n/*mɛ̌n$
       ^7/7<num>$ ^mbɛdtə̂/*mbɛdtə̂$
+
+
+      
       ^7/7<num>$ ^mbàŋ/*mbàŋ$
       ^7/7<num>$ ^mɑ̂/*mɑ̂$
       ^7/7<num>$ ^kwàtə̀/*kwàtə̀$
