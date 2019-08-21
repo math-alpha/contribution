@@ -2,7 +2,7 @@
 Form to help add words to a bidix (To be proposed to Apertium)
 It also adds words to the monodix
 
-##How to use 
+## How to use 
 It works thanks to a minimalistic nodejs (Express js) server.
 <br/>Command : `$ nodemon server`
 then browse to http://localhost:3000<br/>
